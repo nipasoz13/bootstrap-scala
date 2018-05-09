@@ -16,7 +16,5 @@ object FpTraining {
   }
 
   def format(x: Int): String = s"$x is formatted"
-
-  def curriedAddF: Int => (Int => Int) = (x: Int) => (y: Int) => add(x,y)
 }
 
