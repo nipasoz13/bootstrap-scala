@@ -3,6 +3,9 @@ package bootstrap
 import scala.annotation.tailrec
 
 object FpTraining {
+
+  def add(x: Int, y: Int): Int = x + y
+
   def sum(l: List[Int]): Int = {
     @tailrec
     def sum(l: List[Int], acc: Int): Int = l match {
@@ -13,5 +16,7 @@ object FpTraining {
   }
 
   def format(x: Int): String = s"$x is formatted"
+
+  def curriedAddF: Int => (Int => Int) = (x: Int) => (y: Int) => add(x,y)
 }
 

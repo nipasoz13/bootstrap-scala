@@ -4,6 +4,15 @@ import org.scalatest.{FunSpec, Matchers}
 
 class Test extends FunSpec with Matchers {
   describe("Test case") {
+    describe("Addition") {
+      it("Should set add two positive integers") {
+        FpTraining.add(5, 10) should be(15)
+      }
+
+      it("Should set add two negative integers") {
+        FpTraining.add(-5, -10) should be(-15)
+      }
+
       describe("Sum a list") {
         it("Should return 0 Given an empty list") {
           FpTraining.sum(List.empty) should be(0)
