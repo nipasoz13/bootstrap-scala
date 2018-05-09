@@ -6,11 +6,11 @@ class Test extends FunSpec with Matchers {
   describe("Test case") {
     describe("Addition") {
       it("Should set add two positive integers") {
-        FpTraining.add(5, 10) should be(15)
+        FpTraining.addMethod(5, 10) should be(15)
       }
 
       it("Should set add two negative integers") {
-        FpTraining.add(-5, -10) should be(-15)
+        FpTraining.addMethod(-5, -10) should be(-15)
       }
 
       describe("Sum a list") {
